@@ -1,0 +1,17 @@
+<button mat-icon-button [matMenuTriggerFor]="menu">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon> dialpad </mat-icon>
+    <span> Composer </span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon> voicemail </mat-icon>
+    <span> Ecouter les messages </span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon> notifications_off </mat-icon>
+    <span> Désactiver les alertes </span>
+  </button>
+</mat-menu>
